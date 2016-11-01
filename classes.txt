@@ -1,0 +1,57 @@
+class User{
+	id
+	account
+	password
+	time_register
+-----------------------------------
+	func login()
+	func logout()
+	func update()
+	func delete()
+	func register()	
+}
+
+class teacher extends User{
+	flag
+----------------------------------
+	func register(this->flag)
+	func showAllUsers(this->flag)
+	func search(Student)
+}
+
+class student extend User{
+	email
+----------------------------------
+	func register()
+}
+
+class Book{
+	id
+	name
+	pressmark
+	authorName
+	publisher
+	publishTime
+	total
+	remainder
+------------------------------------
+	func register()
+	func update()
+	func delete()
+	func show()
+	func search()
+}
+
+class Lorn(){
+	id
+	userName
+	bookName
+	borrowTime
+	returnTime
+	state
+------------------------------------
+	func borrow()
+	func return()
+	func showHistory(Teacher)
+	func showHistory(Student)
+}
