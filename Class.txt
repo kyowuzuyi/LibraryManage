@@ -1,0 +1,78 @@
+class User{
+	id
+	name
+	password
+	time_register
+}
+
+
+class TopManger extend User{
+	flag = 1
+func	login()
+	logout()
+	showusers()
+	update(manager)
+	delete(manager)
+	save(manager)
+}
+
+
+class Manager extend User{
+	flag = 0
+func    login()
+	logout()
+	showusers()
+	update(user)
+	delete(user)
+	save(user)
+
+
+	save_book(book)
+	update_book(book)
+	dalete_book(book)
+
+	show_history()
+	return()
+}
+
+
+class student extend User{
+	email
+
+func 	login()
+	logout()
+	show_history()
+	search_book()
+	borrow()
+}
+
+
+class Book{
+	Book->id
+	Book->name
+	Book->pressmark
+	Book->name_author
+	Book->publisher
+	Book->time_publish
+	Book->total
+	Book->remainder
+/*-----------------------------------------------*/
+func 	update()
+	dalete()
+	show()
+	save()	
+}
+
+class Loan{
+	id
+	user_name
+	book_name
+	borrow_time
+	retrun_time
+	
+func 	show()
+	save()
+}
+
+
+
